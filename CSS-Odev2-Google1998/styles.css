@@ -1,0 +1,23 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.writing_box {
+    width: 25%;
+}
+
+.line1 {
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.line2 {
+    text-align: center;
+    background-color: #7ee5da;
+}
+
+p {
+    text-align: center;
+}
