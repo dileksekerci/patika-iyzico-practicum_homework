@@ -7,38 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!--CSS sayfamıza ulaşmak için bu bölümde dosyaya link verdik-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--Bootstrap CDN olarak ekledik-->
     <title>Anasayfa</title>
 </head>
 
 <body>
-    <header>
-        <!--Başlık ve linklerin yer aldığı bölüm-->
-        <h1>Müzik Dükkanım</h1>
-        <nav>
-            <!--Diğer sayfalara linkleri veridiğimiz nav bölümü-->
-            <a href="index.html">Anasayfa</a> &nbsp;&nbsp;
-            <a href="product.html">Ürünlerimiz</a>&nbsp;&nbsp;
-            <a href="about.html">Hakkımızda</a>&nbsp;&nbsp;
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <!--Başlık ve linklerin yer aldığı bölüm-->
+            <div class="row bg-secondary">
+                <div class="col-6 mr-auto">
+                    <nav>
+                        <!--Diğer sayfalara linkleri veridiğimiz nav bölümü-->
+                        <a href="index.html" class="baslik">Müzik Dükkanım</a> &nbsp;&nbsp;
+                        <a href="index.html">Anasayfa</a> &nbsp;&nbsp;
+                        <a href="product.html">Ürünlerimiz</a>&nbsp;&nbsp;
+                        <a href="about.html">Hakkımızda</a>&nbsp;&nbsp;
+                    </nav>
+                </div>
+            </div>
+        </header>
 
-    <section>
-        <!--Sayfanın içeriğinin bulunduğu ana bölüm-->
-        <p>
-            Müzik Dükkanım sitemize Hoşgeldiniz. Bu sitede müzik aletlerini bulabilirsin. Uygun fiyatlarımız ve kaliteli
-            ürünlerimiz için
-            <a href="/urunler.html">Ürünlerimiz</a>
-            sayfamızı ziyaret edebilirsiniz.
-        </p>
-        <h3>Sitemizde Bulunan Müzik Aletleri</h3>
-        <ul>
-            <!--Urünleri listelediğimiz bölüm-->
-            <li>Gitar</li>
-            <li>Davul</li>
-            <li>Piyano</li>
-            <li>Keman</li>
-        </ul>
-    </section>
+        <section>
+            <!--Sayfanın içeriğinin bulunduğu ana bölüm-->
+            <div class="row">
+                <div class="col-12">
+                    <h1>MERHABA</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        Müzik Dükkanım sitemize Hoşgeldiniz. Bu sitede müzik aletlerini bulabilirsin. Uygun fiyatlarımız
+                        ve kaliteli ürünlerimiz için <a href="/product.html">Ürünlerimiz</a> sayfamızı ziyaret
+                        edebilirsiniz.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3>Sitemizde Bulunan Müzik Aletleri</h3>
+                    <ul>
+                        <!--Urünleri listelediğimiz bölüm-->
+                        <li>Gitar</li>
+                        <li>Davul</li>
+                        <li>Piyano</li>
+                        <li>Keman</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
