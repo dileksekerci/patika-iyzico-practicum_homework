@@ -1,1 +1,1 @@
-# Bootstrap - Ödev1 - İlk Web Sayfamızı Oluşturmak
+# Bootstrap - Ödev1 - İlk Web Sayfası
