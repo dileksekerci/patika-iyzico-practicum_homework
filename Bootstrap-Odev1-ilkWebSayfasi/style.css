@@ -1,19 +1,6 @@
-h1 {
-    color: brown;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    text-align: center;
-}
-
-h2 {
-    color: darkviolet;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    text-align: center;
-}
-
+h1,
+h2,
 h3 {
-    color: chocolate;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     text-align: center;
