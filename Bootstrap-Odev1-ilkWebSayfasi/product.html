@@ -44,19 +44,69 @@
     <section>
         <h2>Ürünlerimiz</h2>
         <!--Ürünlerin resimlerinin yer aldığı ve listelendiği bölüm-->
-        <ol>
-            <!--ürünlerin resimlerinin genişliği 300px olarak ayarlanmış-->
-            <img src="img/gitar1.jpg" alt="gitar1" width="300px">
-            <li>Elektro Gitar - 2000 ₺</li>
-            <img src="img/gitar2.jpg" alt="gitar2" width="300px">
-            <li>Elektro Gitar - 2500 ₺</li>
-            <img src="img/bateri.jpg" alt="bateri" width="300px">
-            <li>Bateri - 5000 ₺ </li>
-            <img src="img/piyano.jpg" alt="piyano" width="300px">
-            <li>Piyano - 15000 ₺</li>
-            <img src="img/keman.jpg" alt="keman" width="300px">
-            <li>Keman - 500 ₺</li>
-        </ol>
+        <div class="container">
+            <!--Bootstrap girid sistem ile bir container oluşturduk-->
+            <div class="row">
+                <!--Satır oluşturduk ve bu satırı col-6 ile ikiye ayırık-->
+                <div class="col-6 d-flex">
+                    <div class="card my-3 flex-fill">
+                        <!--Her bir ürün için bir card oluşturarak ürünleri içerisinde listeledik-->
+                        <div class="card-body">
+                            <img class="card-img-top" src="img/gitar1.jpg" alt="gitar1">
+                            <h5>Elektro Gitar</h5>
+                            <p class="bg-primary text-white">2000 ₺</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex">
+                    <div class="card my-3 flex-fill">
+                        <!--Her bir ürün için bir card oluşturarak ürünleri içerisinde listeledik-->
+                        <div class="card-body">
+                            <img class="card-img-top" src="img/gitar2.jpg" alt="gitar2">
+                            <h5>Elektro Gitar</h5>
+                            <p class="bg-primary text-white">2.500 ₺</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-6 d-flex">
+                    <div class="card my-3 flex-fill">
+                        <!--Her bir ürün için bir card oluşturarak ürünleri içerisinde listeledik-->
+                        <div class="card-body">
+                            <img class="card-img-top" src="img/bateri.jpg" alt="bateri">
+                            <h5>Elektro Gitar</h5>
+                            <p class="bg-primary text-white">2.500 ₺</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 d-flex">
+                    <div class="card my-3 flex-fill">
+                        <!--Her bir ürün için bir card oluşturarak ürünleri içerisinde listeledik-->
+                        <div class="card-body">
+                            <img class="card-img-top" src="img/piyano.jpg" alt="piyano">
+                            <h5 class="">Piyano</h5>
+                            <p class="bg-primary text-white">15.000 ₺</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 d-flex">
+                    <div class="card my-3 flex-fill">
+                        <!--Her bir ürün için bir card oluşturarak ürünleri içerisinde listeledik-->
+                        <div class="card-body">
+                            <img class="card-img-top" src="img/keman.jpg" alt="keman">
+                            <h5>Keman</h5>
+                            <p class="bg-primary text-white">500 ₺</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <!--Bootstrap JS CDN kodu-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
