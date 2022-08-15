@@ -2,7 +2,6 @@
     margin-left: 192px;
 }
 
-
 ::placeholder {
     text-align: center;
     font-size: 14px;
@@ -34,7 +33,6 @@
     font-size: 16px;
     color: gray;
 }
-
 
 .right-img {
     width: 42px;
@@ -68,8 +66,6 @@ input.empty {
     color: #0095f6;
     margin-top: 5px;
 }
-
-
 
 .storyphoto {
     width: 56px;
