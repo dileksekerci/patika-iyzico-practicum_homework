@@ -17,459 +17,584 @@
 
 <body class="bg-light">
     <!--navbar ortalı dursun diye bir container içerisine alındı-->
-    <div class="container">
-        <!--navbar oluşturuldu renk, border gibi özellikler verildi ve başa sabitlendi-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border">
-            <!--instagram logosu eklendi-->
-            <div class="logo collapse navbar-collapse d-flex mr-5">
-                <a class="navbar-brand" href="#">
-                    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-                        style="height: 44px; width: 150px" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon mr-5"></span>
-                </button>
-            </div>
-            <!--Orta kısımda duran arama formu eklendi-->
-            <div class="collapse navbar-collapse d-flex justfy-content-center ml-5 mr-5">
-                <form class="form-inline my-2 my-lg-0 ml-5 d-none d-sm-block">
-                    <input class="form-control mr-sm-2 empty" type="search" placeholder="Search"
-                        style="font-family: Arial, FontAwesome; height: 33px; width: 216px" aria-label="Search" />
-                </form>
-            </div>
-            <!--sağ bölümdeki logolar ve profil resmi eklendi-->
-            <div class="collapse navbar-collapse d-flex justfy-content-center ml-5 mt-2 mb-1 d-lg-block">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-home fa-2x mr-2 d-none d-sm-block mt-1 mb-1" style="color: black"></i>
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fab fa-facebook-messenger fa-2x mr-2 mt-1 mb-1" style="color: black"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="far fa-compass fa-2x mr-2 mt-1 mb-1" style="color: black"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="far fa-heart fa-2x mr-2 mt-1 mb-1" style="color: black"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank">
-                            <img src="https://picsum.photos/id/237/50/30" class="mt-1 mb-1"
-                                style="width: 32px; height: 33px; border-radius: 50%; " />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <div class="container middlearea py-5 border-bottom-dark mt-5">
-        <div class="row">
-            <!--Sol bölüm oluşturuldu-->
-            <div class="col-6">
-                <div class="card mb-4 mt-2">
-                    <div class="card-body">
-                        <a href="#" style="text-decoration: none; color:black" target="_blank">
-                            <img src="https://picsum.photos/id/237/50/30" class="storyphoto img-fluid mr-3" style="width: 50px; height: 50px; border-radius: 50%;  border: 2px solid rgb(238, 39, 82);
-                  margin-left: -15px;" />
-                            <span class="storytext">kodluyoruz</span>
-                        </a>
-
-                        <a href="#" style="text-decoration: none; color:black" target="_blank">
-                            <img src="https://picsum.photos/id/1003/200/300" class="storyphoto img-fluid" style="width: 50px; height: 50px; border-radius: 50%;  border: 2px solid rgb(238, 39, 82);
-                  margin-left: -15px;" />
-                            <span class="storytext">elonrmuskk</span>
-                        </a>
-
-                        <a href="#" style="text-decoration: none; color: black;" target="_blank">
-                            <img src="https://picsum.photos/id/10/200/300" class="storyphoto img-fluid" style="width: 50px; height: 50px; border-radius: 50%;  border: 2px solid rgb(238, 39, 82);
-                  margin-left: -15px;" />
-                            <span class="storytext">yalcinmert</span>
-                        </a>
-
-                        <a href="#" style="text-decoration: none; color: black" target="_blank">
-                            <img src="https://picsum.photos/id/1000/200/300" class="storyphoto img-fluid" style="width: 50px; height: 50px; border-radius: 50%;  border: 2px solid rgb(238, 39, 82);
-                  margin-left: -15px;" />
-                            <span class="storytext mr-2">ozgeminik</span>
-                        </a>
-
-                        <a href="#" style="text-decoration: none; color: black" target="_blank">
-                            <img src="https://picsum.photos/id/1001/200/300" class="storyphoto img-fluid" style="width: 50px; height: 50px; border-radius: 50%;  border: 2px solid rgb(238, 39, 82);
-                  margin-left: -15px;" />
-                            <span class="storytext">kablosuzkedi</span>
-                        </a>
-
-                        <a href="#" style="text-decoration: none; color: black;" target="_blank">
-                            <img src="https://picsum.photos/id/1004/200/300" class="storyphoto img-fluid" style="width: 50px; height: 50px; border-radius: 50%;  border: 2px solid rgb(238, 39, 82);
-                  margin-left: -15px;" />
-                            <span class="storytext">codecoffee</span>
-                        </a>
-
-                    </div>
+    <header>
+        <div class="container">
+            <!--navbar oluşturuldu renk, border gibi özellikler verildi ve başa sabitlendi-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border">
+                <!--instagram logosu eklendi-->
+                <div class="logo collapse navbar-collapse d-flex mr-5">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                            style="height: 44px; width: 150px" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon mr-5"></span>
+                    </button>
                 </div>
-
-
-                <div class="card mb-4 mt-2">
-                    <div class="card-header">
-                        <img src="https://picsum.photos/id/1006/200/300" class="mr-2"
-                            style="width: 35px; height: 35px; border-radius: 50%" />
-                        <span class="postuserfont2"><strong><a href="#" target="_blank"
-                                    style="color: black; text-decoration: none;">meltembilir</a></strong></span>
-                        <!--<span class="mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span>-->
-                    </div>
-                    <img src="https://blog.biletbayi.com/wp-content/uploads/2019/12/rize.jpg" class="card-img-top"
-                        alt="..." />
-                    <ul class="list-group list-group-horizontal mt-1" style="list-style-type: none; border: none;">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
-                                    style="color: black; position: relative; font-size: 23px"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="
-                        color: black;
-                        position: relative;
-                        font-size: 23px;
-                        margin-left: -11px;
-                      "></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="
-                        color: black;
-                        position: relative;
-                        font-size: 23px;
-                        margin-left: -11px;
-                      "></i></a>
-                        </li>
-                        <span class="">
-                            <li class="nav-item ml-4 ">
-                                <a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg"
-                                        style="color: black; position: relative; font-size: 23px"></i></a>
-                            </li>
-                        </span>
-                    </ul>
-                    <span>
-                        <img src="https://picsum.photos/id/1002/200/300" class="mb-1 ml-3"
-                            style="width: 23px; height: 23px; border-radius: 50%" />
-                        <span class="postuserfont2"><strong>meltembilir</strong> ve
-                            <strong>42 diğer kişi</strong> beğendi</span>
-                    </span>
-                    <div class="card-body" style="margin-top: -15px">
-                        <p class="card-text postuserfont2">
-                            <strong style="margin-left: -4px; margin-right: 5px">meltembilir</strong>Burası Rize! Harika
-                            bir
-                            cennet!
-                        </p>
-                        <a href="#" style="text-decoration: none">
-                            <p class="card-text postuserfont" style="
-                      margin-left: -4px;
-                      margin-top: -14px;
-                      color: rgb(139, 133, 133);
-                    ">
-                                15 yorumun tümünü gör
-                            </p>
-                        </a>
-                        <p class="card-text postuserfont2">
-                            <strong style="margin-left: -4px; margin-right: 5px">furkanbilir
-                            </strong>Çok güzelmiş yaa! Bir gün götürürsün artık bizi de:)
-                        </p>
-                        <p class="card-text postuserfont2" style="margin-top: -15px">
-                            <strong style="margin-left: -4px; margin-right: 5px">elonrmuskk
-                            </strong>That's wonderful view bro! I
-                            always want to travel Rize...
-                        </p>
-                        <p class="card-text" style="
-                    margin-top: -10px;
-                    margin-left: -4px;
-                    font-size: 12px;
-                    color: rgb(139, 133, 133);
-                  ">
-                            10 SAAT ÖNCE
-                        </p>
-                    </div>
-                    <div class="card-footer" style="
-                  color: rgb(139, 133, 133);
-                  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-                    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-                    'Helvetica Neue', sans-serif;
-                  font-size: 14px;
-                ">
-                        <span style="margin-left: -4px">Yorum Ekle...</span><span class=""
-                            style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
-                    </div>
+                <!--Orta kısımda duran arama formu eklendi-->
+                <div class="collapse navbar-collapse d-flex justfy-content-center">
+                    <form class="form-inline d-none d-sm-block">
+                        <input class="form-control empty border rounded" type="search" placeholder="Search"
+                            style="font-family: Arial, FontAwesome; height: 43px; width: 300px" aria-label="Search" />
+                    </form>
                 </div>
-
-                <div class="card mb-4 mt-2">
-                    <div class="card-header">
-                        <img src="https://picsum.photos/id/237/50/30" class="mr-2"
-                            style="width: 35px; height: 35px; border-radius: 50%" />
-                        <span class="postuserfont2"><strong>kodluyoruz</strong></span>
-                        <!-- <span class="mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span> -->
-                    </div>
-                    <img src="https://pbs.twimg.com/media/Erx2B2bXAAEy7gO.jpg" class="card-img-top" alt="..." />
-                    <ul class="list-group list-group-horizontal mt-1" style="list-style-type: none; border: none;">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
-                                    style="color: black; position: relative; font-size: 23px"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="
-                        color: black;
-                        position: relative;
-                        font-size: 23px;
-                        margin-left: -11px;
-                      "></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="
-                        color: black;
-                        position: relative;
-                        font-size: 23px;
-                        margin-left: -11px;
-                      "></i></a>
-                        </li>
-                        <span class="">
-                            <li class="nav-item ml-4">
-                                <a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg"
-                                        style="color: black; position: relative; font-size: 23px"></i></a>
-                            </li>
-                        </span>
-                    </ul>
-                    <span>
-                        <img src="https://picsum.photos/id/1006/200/300" class="mb-1 ml-3"
-                            style="width: 23px; height: 23px; border-radius: 50%" />
-                        <span class="postuserfont2"><strong>meltembilir</strong> ve
-                            <strong>670 diğer kişi</strong> beğendi</span>
-                    </span>
-                    <div class="card-body" style="margin-top: -15px">
-                        <p class="card-text postuserfont2">
-                            <strong style="margin-left: -4px; margin-right: 5px">kodluyoruz</strong>Barış Balta ile AWS
-                            Quick
-                            Start Etkinliği #1 30 Ocak Cumartesi günü saat 10:00-15:30'da!
-                        </p>
-                        <a href="#" style="text-decoration: none">
-                            <p class="card-text postuserfont2" style="
-                      margin-left: -4px;
-                      margin-top: -14px;
-                      color: rgb(139, 133, 133);
-                    ">
-                                60 yorumun tümünü gör
-                            </p>
-                        </a>
-                        <p class="card-text postuserfont2">
-                            <strong style="margin-left: -4px; margin-right: 5px">meltembilir</strong>Harika! Kesinlikle
-                            katılacağım! :)
-                        </p>
-                        <p class="card-text postuserfont2" style="margin-top: -15px">
-                            <strong style="margin-left: -4px; margin-right: 5px">kablosuzbeyin</strong>Topluluk olarak
-                            heyecanlıyız!
-                        </p>
-                        <p class="card-text" style="
-                    margin-top: -10px;
-                    margin-left: -4px;
-                    font-size: 12px;
-                    color: rgb(139, 133, 133);
-                  ">
-                            10 SAAT ÖNCE
-                        </p>
-                    </div>
-                    <div class="card-footer" style="
-                  color: rgb(139, 133, 133);
-                  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-                    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-                    'Helvetica Neue', sans-serif;
-                  font-size: 14px;
-                ">
-                        <span style="margin-left: -4px">Yorum Ekle...</span><span class=""
-                            style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
-                    </div>
-                </div>
-
-                <div class="card mb-4 mt-2">
-                    <div class="card-header">
-                        <img src="https://picsum.photos/id/1001/200/300" class="mr-2"
-                            style="width: 35px; height: 35px; border-radius: 50%" />
-                        <span class="postuserfont"><strong>elonrmuskk</strong></span>
-                        <!-- <span class="mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span> -->
-                    </div>
-                    <img src="https://i.insider.com/5f1b201a5af6cc7e1b741330?width=1136&format=jpeg"
-                        class="card-img-top" alt="..." />
-                    <ul class="list-group list-group-horizontal mt-1" style="list-style-type: none; border:none">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
-                                    style="color: black; position: relative; font-size: 23px"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="
-                        color: black;
-                        position: relative;
-                        font-size: 23px;
-                        margin-left: -11px;
-                      "></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="
-                        color: black;
-                        position: relative;
-                        font-size: 23px;
-                        margin-left: -11px;
-                      "></i></a>
-                        </li>
-                        <span class="">
-                            <li class="nav-item ml-4">
-                                <a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg"
-                                        style="color: black; position: relative; font-size: 23px"></i></a>
-                            </li>
-                        </span>
-                    </ul>
-                    <span>
-                        <img src="https://picsum.photos/id/1006/200/300" class="mb-1 ml-3"
-                            style="width: 23px; height: 23px; border-radius: 50%" />
-                        <span class="postuserfont"><strong>cengizcmataraci</strong> ve
-                            <strong>900.182 diğer kişi</strong> beğendi</span>
-                    </span>
-                    <div class="card-body" style="margin-top: -15px">
-                        <p class="card-text postuserfont2">
-                            <strong style="margin-left: -4px; margin-right: 5px">elonrmussk</strong>That's just
-                            beautiful!
-                        </p>
-                        <a href="#" style="text-decoration: none">
-                            <p class="card-text postuserfont2" style="
-                      margin-left: -4px;
-                      margin-top: -14px;
-                      color: rgb(139, 133, 133);
-                    ">
-                                1500 yorumun tümünü gör
-                            </p>
-                        </a>
-                        <p class="card-text postuserfont2">
-                            <strong style="margin-left: -4px; margin-right: 5px">meltembilir</strong>Yeah! Here you go!
-                        </p>
-                        <p class="card-text postuserfont2" style="margin-top: -15px">
-                            <strong style="margin-left: -4px; margin-right: 5px">spacex</strong>When are we moving?
-                        </p>
-                        <p class="card-text" style="
-                    margin-top: -10px;
-                    margin-left: -4px;
-                    font-size: 12px;
-                    color: rgb(139, 133, 133);
-                  ">
-                            10 SAAT ÖNCE
-                        </p>
-                    </div>
-                    <div class="card-footer" style="
-                  color: rgb(139, 133, 133);
-                  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-                    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-                    'Helvetica Neue', sans-serif;
-                  font-size: 14px;
-                ">
-                        <span style="margin-left: -4px">Yorum Ekle...</span><span class=""
-                            style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6">
-                <!--Sağ Bölüm Oluşturuldu-->
-                <div class="card col-xs-12 rightpanel" id="sticky-sidebar" style="width: 25rem">
-                    <div class="card-body d-flex">
-                        <div>
+                <!--sağ bölümdeki logolar ve profil resmi eklendi-->
+                <div class="collapse navbar-collapse d-flex justfy-content-center ml-5 mt-2 mb-1 d-lg-block">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
                             <a class="nav-link" href="#">
-                                <span>
-                                    <img src="https://picsum.photos/id/237/50/30" class="rightpp mt-1 mb-1 ms-2" />
-                                    <span class="person_name"><strong>Meltem Bilir</strong></span>
-                                </span>
+                                <i class="fas fa-home fa-2x mr-2 d-none d-sm-block mt-1 mb-1" style="color: black"></i>
+                                <span class="sr-only">(current)</span>
                             </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fab fa-facebook-messenger fa-2x mr-2 mt-1 mb-1" style="color: black"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="far fa-compass fa-2x mr-2 mt-1 mb-1" style="color: black"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="far fa-heart fa-2x mr-2 mt-1 mb-1" style="color: black"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">
+                                <img src="https://picsum.photos/id/237/50/30" class="mt-1 mb-1"
+                                    style="width: 32px; height: 33px; border-radius: 50%; " />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-                            <div class="mt-2">
-                                <span class="suggestions mt-5"> Senin İçin Öneriler</span>
-                                <span class="postuserfont1 mt-1">
-                                    <a href="#" style="color:black; text-decoration: none; ">
-                                        <strong>Tümünü Gör</strong>
-                                    </a>
-                                </span>
+    <main>
+        <div class="container middlearea py-5 border-bottom-dark mt-5 d-flex justify-content-center">
+            <div class="row">
+                <!--Sol Bölüm Başlangıcı-->
+                <div class="col-8">
+                    <!--Story Bölümü Başlangıcı-->
+                    <div class="card" style="width: 53.5rem; height: 7.5rem;">
+                        <div class="card-body d-flex justify-content-start">
+                            <ul class="list-unstyled mb-0">
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 m-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger">
+                                                <img src="https://picsum.photos/id/237/50/30"
+                                                    class="storyphoto img-fluid mr-3">
+                                            </div>
+                                            <small>kodluyoruz</small>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 m-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger">
+                                                <img src="https://picsum.photos/id/1003/200/300"
+                                                    class="storyphoto img-fluid mr-3">
+                                            </div>
+                                            <small>elonrmuskk</small>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 m-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger">
+                                                <img src="https://picsum.photos/id/10/200/300"
+                                                    class="storyphoto img-fluid mr-3">
+                                            </div>
+                                            <small>yalcinmert</small>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 m-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger">
+                                                <img src="https://picsum.photos/id/1000/200/300"
+                                                    class="storyphoto img-fluid mr-3">
+                                            </div>
+                                            <small>ozgeminik</small>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 m-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger">
+                                                <img src="https://picsum.photos/id/1001/200/300"
+                                                    class="storyphoto img-fluid mr-3">
+                                            </div>
+                                            <small>kablosuzkedi</small>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 m-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger">
+                                                <img src="https://picsum.photos/id/1004/200/300"
+                                                    class="storyphoto img-fluid mr-3">
+                                            </div>
+                                            <small>codecoffee</small>
+                                        </div>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Story Bölümü Bitişi-->
+
+                    <!--Post Bölümü Başlangıcı-->
+                    <!--Birinci Post Başlangıcı-->
+                    <div class="card mb-4 mt-2">
+                        <!--İsim ve profil resmi-->
+                        <div class="card-header p-3">
+                            <div class="d-flex flex-row align-items-center">
+                                <div
+                                    class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger">
+                                    <img src="https://picsum.photos/id/237/50/30"
+                                        class="post-profile-photo img-fluid mr-3">
+                                </div>
+                                <span class="ms-2"><strong>meltembilir</strong></span>
                             </div>
-                            <div class="mt-2 ml-2">
-                                <div>
-                                    <span><img src="https://picsum.photos/id/1025/200/300" class="right-img" /></span>
-                                    <a href="#" target="_blank" style="color: black; text-decoration: none;">
-                                        <span class="postuserfont1 ml-2 mt-1"><strong>kablosuzbeyin</strong></span>
-                                        <dspan class="postuserfont"><strong> Takip Et</strong></span>
-                                    </a>
-                                </div>
-                                <div class="mt-3">
-                                    <span><img src="https://picsum.photos/id/1022/200/300" class="right-img" /></span>
-                                    <a href="#" target="_blank" style="color: black; text-decoration: none;">
-                                        <span class="postuserfont1 ml-2 mt-1"><strong>codecraftcom </strong></span>
-                                        <span class="postuserfont ms-5"><strong>Takip Et</strong></span>
-                                    </a>
-                                </div>
-                                <div class="mt-3">
-                                    <span><img src="https://picsum.photos/id/1021/200/300" class="right-img" /></span>
-                                    <a href="#" target="_blank" style="color: black; text-decoration: none;">
-                                        <span class="postuserfont1 ml-2 mt-1"><strong>navlungotr</strong></span>
-                                        <span class="postuserfont ms-5"><strong>Takip Et</strong></span>
-                                    </a>
-                                </div>
-                                <div class="mt-3">
-                                    <span><img src="https://picsum.photos/id/1022/200/300" class="right-img" /></span>
-                                    <a href="#" target="_blank" style="color: black; text-decoration: none;">
-                                        <span class="postuserfont1 ml-2 mt-1"><strong>podfreshco</strong></span>
-                                        <span class="postuserfont ms-5"><strong>Takip Et</strong></span>
-                                </div>
-                                <div class="mt-3">
-                                    <span><img src="https://picsum.photos/id/1019/200/300" class="right-img" /></span>
-                                    <a href="#" target="_blank" style="color: black; text-decoration: none;">
-                                        <span class="postuserfont1 ml-2 mt-1"><strong>Kodluyoruz Junior</strong></span>
-                                        <span class="postuserfont ms-5"><strong>Takip Et</strong></span>
-                                    </a>
-                                </div>
+                        </div>
+                        <!--Paylaşılan resim-->
+                        <div class="card-body p-0">
+                            <div class="embed-responsive embed-responsive-1by1">
+                                <img src="https://blog.biletbayi.com/wp-content/uploads/2019/12/rize.jpg"
+                                    class="card-img-top" />
                             </div>
-                            <!--Sağ altta bulunan instagram hakkımızda yardım vs. linleri-->
-                            <div class="ml-2 mt-2 explanation">
-                                <span><a href="https://about.instagram.com/" target="_blank"
-                                        class="rightpanellinks">Hakkında</a>
-                                    <a href="https://help.instagram.com/" target="_blank"
-                                        class="rightpanellinks">Yardım</a>
-                                    <a href="https://about.instagram.com/blog/" class="rightpanellinks">Basın</a>
-                                    <a href="https://www.instagram.com/developer/" class="rightpanellinks">API</a>
-                                    <a href="https://www.instagram.com/about/jobs/" class="rightpanellinks">İş
-                                        Fırsatları</a>
-                                    <a href="https://www.instagram.com/legal/privacy/"
-                                        class="rightpanellinks">Gizlilik</a>
-                                </span>
-                                <span>
-                                    <a href="https://www.instagram.com/legal/terms/"
-                                        class="rightpanellinks">Koşullar</a>
-                                    <a href="https://www.instagram.com/explore/locations/"
-                                        class="rightpanellinks">Konumlar</a>
-                                    <a href="https://www.instagram.com/directory/profiles/"
-                                        class="rightpanellinks">Başlıca Hesaplar</a>
-                                    <a href="https://www.instagram.com/directory/hashtags/" class="rightpanellinks">Konu
-                                        Etiketleri</a>
-                                    <a href="https://www.instagram.com/directory/hashtags/"
-                                        class="rightpanellinks">Dil</a></span>
-                                <p></p>
-                                <p style="font-size: 12px;">© 2021 INSTAGRAM</p>
+                        </div>
+                        <!--Beğen kaydet paylaş seçenekleri-->
+                        <div class="d-flex flex-row justify-content-between pl-3 pr-3 pt-3 pb-1">
+                            <ul class="list-inline d-flex flex-row align-items-center m-0"
+                                style="list-style-type: none; border: none;">
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 ms-2">
+                                        <i class="far fa-heart fa-lg"
+                                            style="color: black; position: relative; font-size: 23px"></i>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0">
+                                        <i class="far fa-comment fa-lg"
+                                            style="color: black; position: relative; font-size: 23px;"></i>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0">
+                                        <i class="far fa-paper-plane fa-lg"
+                                            style="color: black; position: relative; font-size: 23px;"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div>
+                                <button class="btn p-0 me-2">
+                                    <i class="far fa-bookmark fa-lg"
+                                        style="color: black; position: relative; font-size: 23px"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!--Beğeni Sayısı-->
+                        <div class="ms-2 mt-2">
+                            <img src="https://picsum.photos/id/237/50/30" class="mb-1 ml-3"
+                                style="width: 23px; height: 23px; border-radius: 50%" />
+                            <span class="postuserfont2"><strong>meltembilir</strong> ve
+                                <strong>42 diğer kişi</strong> beğendi</span>
+                        </div>
+                        <!--Post için açıklama yazılan bölüm-->
+                        <div class="card-body" style="margin-top: -15px">
+                            <p class="card-text postuserfont2 ms-0 mt-2">
+                                <strong class="">meltembilir</strong>
+                                Burası Rize! Harikabir cennet!
+                            </p>
+
+                            <!--Yorum Bölümü-->
+                            <div class="mt-0 ms-0">
+                                <a href="#" style="text-decoration: none">
+                                    <p class="card-text postuserfont" style="color: rgb(139, 133, 133);">
+                                        15 yorumun tümünü gör
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mt-2 ms-0">
+                                <p class="card-text postuserfont2">
+                                    <strong style="margin-left: -4px; margin-right: 5px">furkanbilir</strong>
+                                    Çok güzelmiş yaa! Bir gün götürürsün artık bizi de:)
+                                </p>
+                            </div>
+                            <div class="mt-3 ms-0">
+                                <p class="card-text postuserfont2" style="margin-top: -15px">
+                                    <strong style="margin-left: -4px; margin-right: 5px">elonrmuskk</strong>
+                                    That's wonderful view bro! I always want to travel Rize...
+                                </p>
+                            </div>
+                            <div class="mt-0 ms-0">
+                                <p class="card-text" style="color: rgb(139, 133, 133);">
+                                    10 SAAT ÖNCE
+                                </p>
+                            </div>
+                        </div>
+                        <!--Yorum Ekle - Paylaş Bölümü-->
+                        <div class="d-flex flex-row justify-content-between align-items-center mt-2 p-2 border">
+                            <div class="d-flex flex-row align-items-center ms-2" style="color: gray;">
+                                <strong>Yorum Ekle...</strong>
+                            </div>
+                            <span class="postuserfont1 mt-1 me-2 mb-2">
+                                <a href="#" style="color:#0095f6; text-decoration: none; opacity: 50%;">
+                                    <strong>Paylaş</strong>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <!--Birinci Post Bitişi-->
+
+                    <!--İkinci Post Başlangıç-->
+                    <div class="card mb-4 mt-2">
+                        <!--İsim ve profil resmi-->
+                        <div class="card-header p-3">
+                            <div class="d-flex flex-row align-items-center">
+                                <div
+                                    class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger">
+                                    <img src="https://picsum.photos/id/237/50/30"
+                                        class="post-profile-photo img-fluid mr-3">
+                                </div>
+                                <span class="ms-2"><strong>kodluyoruz</strong></span>
+                            </div>
+                        </div>
+                        <!--Paylaşılan resim-->
+                        <div class="card-body p-0">
+                            <div class="embed-responsive embed-responsive-1by1">
+                                <img src="https://pbs.twimg.com/media/Erx2B2bXAAEy7gO.jpg" class="card-img-top" />
+                            </div>
+                        </div>
+                        <!--Beğen kaydet paylaş seçenekleri-->
+                        <div class="d-flex flex-row justify-content-between pl-3 pr-3 pt-3 pb-1">
+                            <ul class="list-inline d-flex flex-row align-items-center m-0"
+                                style="list-style-type: none; border: none;">
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 ms-2">
+                                        <i class="far fa-heart fa-lg"
+                                            style="color: black; position: relative; font-size: 23px"></i>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0">
+                                        <i class="far fa-comment fa-lg"
+                                            style="color: black; position: relative; font-size: 23px;"></i>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0">
+                                        <i class="far fa-paper-plane fa-lg"
+                                            style="color: black; position: relative; font-size: 23px;"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div>
+                                <button class="btn p-0 me-2">
+                                    <i class="far fa-bookmark fa-lg"
+                                        style="color: black; position: relative; font-size: 23px"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!--Beğeni Sayısı-->
+                        <div class="ms-2 mt-2">
+                            <img src="https://picsum.photos/id/237/50/30" class="mb-1 ml-3"
+                                style="width: 23px; height: 23px; border-radius: 50%" />
+                            <span class="postuserfont2"><strong>meltembilir</strong> ve
+                                <strong>670 diğer kişi</strong> beğendi</span>
+                        </div>
+                        <!--Post için açıklama yazılan bölüm-->
+                        <div class="card-body" style="margin-top: -15px">
+                            <p class="card-text postuserfont2 ms-0 mt-2">
+                                <strong class="">kodluyoruz</strong>
+                                Barış Balta ile AWS Quick Start Etkinliği #1 30 Ocak Cumartesi günü saat 10:00-15:30'da!
+                            </p>
+                            <!--Yorum Bölümü-->
+                            <div class="mt-0 ms-0">
+                                <a href="#" style="text-decoration: none">
+                                    <p class="card-text postuserfont" style="color: rgb(139, 133, 133);">
+                                        60 yorumun tümünü gör
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mt-2 ms-0">
+                                <p class="card-text postuserfont2">
+                                    <strong style="margin-left: -4px; margin-right: 5px">meltembilir</strong>
+                                    Harika! Kesinlikle katılacağım! :)
+                                </p>
+                            </div>
+                            <div class="mt-3 ms-0">
+                                <p class="card-text postuserfont2" style="margin-top: -15px">
+                                    <strong style="margin-left: -4px; margin-right: 5px">elonrmuskk</strong>
+                                    Topluluk olarak heycanlıyız!
+                                </p>
+                            </div>
+                            <div class="mt-0 ms-0">
+                                <p class="card-text" style="color: rgb(139, 133, 133);">
+                                    10 SAAT ÖNCE
+                                </p>
+                            </div>
+                        </div>
+                        <!--Yorum Ekle - Paylaş Bölümü-->
+                        <div class="d-flex flex-row justify-content-between align-items-center mt-2 p-2 border">
+                            <div class="d-flex flex-row align-items-center ms-2" style="color: gray;">
+                                <strong>Yorum Ekle...</strong>
+                            </div>
+                            <span class="postuserfont1 mt-1 me-2 mb-2">
+                                <a href="#" style="color:#0095f6; text-decoration: none; opacity: 50%;">
+                                    <strong>Paylaş</strong>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <!--İkinci Post Bitiş-->
+
+                    <!--Üçüncü Post Başlangıcı-->
+                    <div class="card mb-4 mt-2">
+                        <!--İsim ve profil resmi-->
+                        <div class="card-header p-3">
+                            <div class="d-flex flex-row align-items-center">
+                                <div
+                                    class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger">
+                                    <img src="https://picsum.photos/id/1001/200/3000"
+                                        class="post-profile-photo img-fluid mr-3">
+                                </div>
+                                <span class="ms-2"><strong>elonrmuskk</strong></span>
+                            </div>
+                        </div>
+                        <!--Paylaşılan resim-->
+                        <div class="card-body p-0">
+                            <div class="embed-responsive embed-responsive-1by1">
+                                <img src="https://i.insider.com/5f1b201a5af6cc7e1b741330?width=1136&format=jpeg"
+                                    class="card-img-top" />
+                            </div>
+                        </div>
+                        <!--Beğen kaydet paylaş seçenekleri-->
+                        <div class="d-flex flex-row justify-content-between pl-3 pr-3 pt-3 pb-1">
+                            <ul class="list-inline d-flex flex-row align-items-center m-0"
+                                style="list-style-type: none; border: none;">
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 ms-2">
+                                        <i class="far fa-heart fa-lg"
+                                            style="color: black; position: relative; font-size: 23px"></i>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0">
+                                        <i class="far fa-comment fa-lg"
+                                            style="color: black; position: relative; font-size: 23px;"></i>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0">
+                                        <i class="far fa-paper-plane fa-lg"
+                                            style="color: black; position: relative; font-size: 23px;"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div>
+                                <button class="btn p-0 me-2">
+                                    <i class="far fa-bookmark fa-lg"
+                                        style="color: black; position: relative; font-size: 23px"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!--Beğeni Sayısı-->
+                        <div class="ms-2 mt-2">
+                            <img src="https://picsum.photos/id/1006/200/300" class="mb-1 ml-3"
+                                style="width: 23px; height: 23px; border-radius: 50%" />
+                            <span class="postuserfont2"><strong>cengizmataraci</strong> ve
+                                <strong>900.182 diğer kişi</strong> beğendi</span>
+                        </div>
+                        <!--Post için açıklama yazılan bölüm-->
+                        <div class="card-body" style="margin-top: -15px">
+                            <p class="card-text postuserfont2 ms-0 mt-2">
+                                <strong class="">elonrmuskk</strong>
+                                That's just beautiful!
+                            </p>
+                            <!--Yorum Bölümü-->
+                            <div class="mt-0 ms-0">
+                                <a href="#" style="text-decoration: none">
+                                    <p class="card-text postuserfont" style="color: rgb(139, 133, 133);">
+                                        1500 yorumun tümünü gör
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mt-2 ms-0">
+                                <p class="card-text postuserfont2">
+                                    <strong style="margin-left: -4px; margin-right: 5px">meltembilir</strong>
+                                    Yeah! Here you go!
+                                </p>
+                            </div>
+                            <div class="mt-3 ms-0">
+                                <p class="card-text postuserfont2" style="margin-top: -15px">
+                                    <strong style="margin-left: -4px; margin-right: 5px">spacex</strong>
+                                    When are we moving?
+                                </p>
+                            </div>
+                            <div class="mt-0 ms-0">
+                                <p class="card-text" style="color: rgb(139, 133, 133);">
+                                    10 SAAT ÖNCE
+                                </p>
+                            </div>
+                        </div>
+                        <!--Yorum Ekle - Paylaş Bölümü-->
+                        <div class="d-flex flex-row justify-content-between align-items-center mt-2 p-2 border">
+                            <div class="d-flex flex-row align-items-center ms-2" style="color: gray;">
+                                <strong>Yorum Ekle...</strong>
+                            </div>
+                            <span class="postuserfont1 mt-1 me-2 mb-2">
+                                <a href="#" style="color:#0095f6; text-decoration: none; opacity: 50%;">
+                                    <strong>Paylaş</strong>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <!--Üçüncü Post Bitişi-->
+                </div>
+                <!--Sol Bölüm Bitişi-->
+
+                <div class="col-4">
+                    <!--Sağ Bölüm Başlangıcı-->
+                    <div class="card col-xs-12 rightpanel border-0 bg-light" id="sticky-sidebar" style="width: 30rem">
+                        <div class="card-body d-flex">
+                            <div>
+                                <a class="nav-link" href="#">
+                                    <span>
+                                        <img src="https://picsum.photos/id/237/50/30" class="rightpp mt-1 mb-1 ms-2" />
+                                        <span class="person_name"><strong>Meltem Bilir</strong></span>
+                                    </span>
+                                </a>
+                                <div class="d-flex flex-row justify-content-between align-items-center mt-2">
+                                    <div class="d-flex flex-row align-items-center"
+                                        style="font-size: 18px; color: gray;">
+                                        <strong>Senin İçin Öneriler</strong>
+                                    </div>
+                                    <span class="postuserfont1 mt-1">
+                                        <a href="#" style="color:black; text-decoration: none; ">
+                                            <strong>Tümünü Gör</strong>
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="mt-2 ml-2">
+                                    <div class="d-flex flex-row justify-content-between align-items-center mt-3 mb-3">
+                                        <div class="d-flex flex-row align-items-center" style="font-size: 18px;">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border me-3">
+                                                <img src="https://picsum.photos/id/1025/200/300" class="right-img" />
+                                            </div>
+                                            <strong>kablosuzbeyin</strong>
+                                        </div>
+                                        <button class="btn btn-sm p-0 btn-ig postuserfont"><strong>Takip
+                                                Et</strong></button>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-items-center mt-3 mb-3">
+                                        <div class="d-flex flex-row align-items-center" style="font-size: 18px;">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border me-3">
+                                                <img src="https://picsum.photos/id/1022/200/300" class="right-img" />
+                                            </div>
+                                            <strong>codecraftcom </strong>
+                                        </div>
+                                        <button class="btn btn-sm p-0 btn-ig postuserfont"><strong>Takip
+                                                Et</strong></button>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-items-center mt-3 mb-3">
+                                        <div class="d-flex flex-row align-items-center" style="font-size: 18px;">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border me-3">
+                                                <img src="https://picsum.photos/id/1021/200/300" class="right-img" />
+                                            </div>
+                                            <strong>navlungotr</strong>
+                                        </div>
+                                        <button class="btn btn-sm p-0 btn-ig postuserfont"><strong>Takip
+                                                Et</strong></button>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-items-center mt-3 mb-3">
+                                        <div class="d-flex flex-row align-items-center" style="font-size: 18px;">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border me-3">
+                                                <img src="https://picsum.photos/id/1022/200/300" class="right-img" />
+                                            </div>
+                                            <strong>podfreshco</strong>
+                                        </div>
+                                        <button class="btn btn-sm p-0 btn-ig postuserfont"><strong>Takip
+                                                Et</strong></button>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-items-center mt-3 mb-3">
+                                        <div class="d-flex flex-row align-items-center" style="font-size: 18px;">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border me-3">
+                                                <img src="https://picsum.photos/id/1019/200/300" class="right-img" />
+                                            </div>
+                                            <strong>Kodluyoruz Junior</strong>
+                                        </div>
+                                        <button class="btn btn-sm p-0 btn-ig postuserfont"><strong>Takip
+                                                Et</strong></button>
+                                    </div>
+                                </div>
+                                <!--Sağ altta bulunan instagram hakkımızda yardım vs. linleri-->
+                                <div class="ml-2 mt-2 explanation">
+                                    <span><a href="https://about.instagram.com/" target="_blank"
+                                            class="rightpanellinks">Hakkında .</a>
+                                        <a href="https://help.instagram.com/" target="_blank"
+                                            class="rightpanellinks">Yardım
+                                            .</a>
+                                        <a href="https://about.instagram.com/blog/" class="rightpanellinks">Basın
+                                            .</a>
+                                        <a href="https://www.instagram.com/developer/" class="rightpanellinks">API
+                                            .</a>
+                                        <a href="https://www.instagram.com/about/jobs/" class="rightpanellinks">İş
+                                            Fırsatları .</a>
+                                        <a href="https://www.instagram.com/legal/privacy/"
+                                            class="rightpanellinks">Gizlilik
+                                            .</a>
+                                    </span>
+                                    <span>
+                                        <a href="https://www.instagram.com/legal/terms/"
+                                            class="rightpanellinks">Koşullar
+                                            .</a>
+                                        <a href="https://www.instagram.com/explore/locations/"
+                                            class="rightpanellinks">Konumlar .</a>
+                                        <a href="https://www.instagram.com/directory/profiles/"
+                                            class="rightpanellinks">Başlıca Hesaplar .</a>
+                                        <a href="https://www.instagram.com/directory/hashtags/"
+                                            class="rightpanellinks">Konu
+                                            Etiketleri .</a>
+                                        <a href="https://www.instagram.com/directory/hashtags/"
+                                            class="rightpanellinks">Dil
+                                        </a></span>
+                                    <p></p>
+                                    <p style="font-size: 18px;">© 2021 INSTAGRAM FROM META</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--Sağ Bölüm Bitişi-->
                 </div>
             </div>
         </div>
-    </div>
-
+    </main>
     <!--JQery CDN olarak eklendi-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
