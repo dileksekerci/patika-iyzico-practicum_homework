@@ -3,7 +3,8 @@
 }
 
 ::placeholder {
-    text-align: center;
+    text-align: left;
+    padding-left: 18px;
     font-size: 14px;
     color: gray;
     background-position: 5%;
@@ -79,14 +80,6 @@ input.searche::placeholder {
     font-weight: bold
 }
 
-button.mediatext {
-    color: #5f5f5f;
-}
-
-button.mediatext:hover {
-    color: #5f5f5f;
-}
-
 .mediatext {
     font-size: 15px;
     font-weight: bold;
@@ -158,11 +151,14 @@ li {
 }
 
 button.ref {
-    color: white;
+    border: none;
+    background-color: white;
 }
 
 button.ref:hover {
-    color: #5f5f5f;
+    background-color: #DDDDDD;
+    border: none;
+    border-radius: 10%;
 }
 
 .postphoto {
@@ -172,11 +168,16 @@ button.ref:hover {
 }
 
 .posttext {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 18px;
     margin-left: 8px;
+    margin-top: 8px;
+}
+
+.job {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    color: #474747;
 }
 
 .card {
@@ -189,9 +190,50 @@ button.ref:hover {
     border: 2px solid rgb(0, 0, 0, 0);
 }
 
+.right-btn {
+    border: 1 solid #191919;
+    border-radius: 50px;
+    background-color: white;
+    margin-left: 55px;
+    font-size: 18px;
+    color: #5f5f5f;
+}
+
+button.right-btn:hover {
+    background-color: #e7e2e2;
+}
+
+.right-card {
+    font-weight: lighter;
+    font-size: 14px;
+    color: #5f5f5f;
+}
+
+.right-card a {
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+.card-footer {
+    color: #0a66c2;
+    font-size: 14px;
+    margin-top: -25px
+}
+
+.card-footer a {
+    color: #0a66c2;
+    text-decoration: none;
+}
+
 .input-box {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
 
+.link {
+    font-size: 16px;
+    color: #AAA9A7;
+    text-decoration: none;
+    margin-right: 10px;
 }
