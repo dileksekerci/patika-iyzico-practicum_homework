@@ -1,4 +1,4 @@
-# Bootstrap - Ödev2 - Linkedin Clone Sayfası
+# Bootstrap - Ödev3 - Linkedin Clone Sayfası
 Bir profesyonel sosyal iş ağı ve sosyal paylaşım platformu olan LinkedIn' ın Bootstrap kullanılarak oluşturulmuş anasayfası tasarımıdır.
 Sayfa içerisinde navbar bölümümüz başa sabitlendi. Ayrıca sayfamız üç sütundan oluşuyor.
 Sayfa içerisinde; 
