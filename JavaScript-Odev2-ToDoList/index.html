@@ -17,7 +17,7 @@
 
     <div class="mr-1" style="position: relative">
         <div style="position: absolute; top: 0; right: 0">
-            <div id="liveToast" class="toast success hide" role="alert" aria-live="assertive" aria-atomic="true"
+            <div id="toast-ins" class="toast success hide" role="alert" aria-live="assertive" aria-atomic="true"
                 data-delay="4000">
                 <div>
                     <button type="button" class="close" data-dismiss="toast" aria-label="Close">
@@ -30,7 +30,7 @@
     </div>
     <div class="mr-1" style="position: relative">
         <div style="position: absolute; top: 0; right: 0">
-            <div id="liveToast" class="toast error hide" role="alert" aria-live="assertive" aria-atomic="true"
+            <div id="toast-empty" class="toast error hide" role="alert" aria-live="assertive" aria-atomic="true"
                 data-delay="4000">
                 <div>
                     <button type="button" class="close" data-dismiss="toast" aria-label="Close">
@@ -41,22 +41,34 @@
             </div>
         </div>
     </div>
+    <div class="mr-1" style="position: relative">
+        <div style="position: absolute; top: 0; right: 0">
+            <div id="toast-del" class="toast error hide" role="alert" aria-live="assertive" aria-atomic="true"
+                data-delay="4000">
+                <div>
+                    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">Liste Öğesi Silindi!</div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="header">
             <img src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
                 class="mb-1" alt="" />
             <h2>Yapılacaklar Listesi</h2>
-            <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
-            <span onclick="newElement()" id="liveToastBtn" class="button">Ekle</span>
-        </div>
+            <form id="new-todo" class="d-flex mb-3">
+                <input type="text" id="todo-text" placeholder="Bugün ne yapacaksın?" autocomplete="off" />
+                <button type="submit" class="btn btn-primary w-30 ml-1">Ekle</button>
+            </form>
 
-        <ul id="list">
-            <li>3 Litre Su İç</li>
-            <li>Ödevleri Yap</li>
-            <li>En Az 3 Saat Kodlama Yap</li>
-            <li>Yemek Yap</li>
-            <li>50 Sayfa Kitap Oku</li>
-        </ul>
+            <ul id="todo-list" class="list-group">
+
+            </ul>
+
+        </div>
 
 
         <!--kendi oluşturduğumuz clock.js dosyası projeye eklendi-->
