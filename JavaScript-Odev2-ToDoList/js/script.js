@@ -4,24 +4,15 @@ let todoText = document.querySelector("#text")
 let form = document.querySelector("#new-todo")
 let ullength = document.getElementsByTagName("li");
 
-let taskList = [];
-
-if (localStorage.getItem("taskList") !== null) {
-    taskList = JSON.parse(localStorage.getItem("taskList"));
-}
-
-
 form.addEventListener("submit", addTodo)
 
 //Choose an element
 function check() {
     this.classList.toggle("checked");
-    localStorage.setItem("taskList", JSON.stringify(taskList));
 }
 
 function removeButton() {
     this.parentElement.remove();
-    localStorage.setItem("taskList", JSON.stringify(taskList));
 }
 
 //add new list item
@@ -29,7 +20,6 @@ function newListItem() {
     let todoLi = document.createElement('li')
     todoList.appendChild(todoLi);
     todoLi.innerHTML = text.value;
-    localStorage.setItem("taskList", JSON.stringify(taskList));
 
     //chosee
     todoLi.onclick = check;
@@ -41,7 +31,6 @@ function newListItem() {
     deleteBtn.onclick = removeButton;
 
     todoLi.append(deleteBtn);
-
 }
 
 
@@ -67,9 +56,8 @@ function deleteTodo() {
         deleteBtn.onclick = removeButton;
         ullength[i].append(deleteBtn);
         ullength[i].onclick = check;
-        localStorage.setItem("taskList", JSON.stringify(taskList));
     }
 }
 
 
-//TODO: Local Storage Çalışmıyor
+//TODO: Local Storage Ekelenecek
