@@ -50,6 +50,7 @@ ul li.checked::before {
 }
 
 .close {
+    border: none;
     position: absolute;
     right: 0;
     top: 0;
