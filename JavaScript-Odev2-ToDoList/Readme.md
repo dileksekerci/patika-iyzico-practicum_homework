@@ -1,6 +1,7 @@
 # JavaScript - Ödev2 - ToDo List
 Sayfamız, yapılacakları kaydetdiğimiz bir listeleme sayfası. Sayfa içerisinde, listeye yeni bir yapılacak iş eklenebilir, silinebilir ve yapılanların üzerine tıklanarak işaretlenebilir durumda. Ayrıca boş ekleme yapılamaz, listeye eklendi ve silindi mesajları Bootstrap Toast ile gösterilmektedir.
-Listeye eklenen veriler Local Storage da tutulara kdaha sonra açtığımızda da görülecek. Şimdilik bu kısım çalışmıyor. Tamamlamak için çalışmalar sürüyor. :)
+
+Listeye eklenen veriler Local Storage da tutulacak ve daha sonra açtığımızda, yapılacak listemize daha önce eklediğimiz işleri görebileceğiz. Şimdilik bu kısım çalışmıyor. Tamamlamak için çalışmalar sürüyor. :)
 
 İçerik HTML, CSS, Bootstrap 5.2 versiyonu ve JavaScript ile oluşturulmuştur. Bootstrap sayfaya CDN olrak eklendi. Sayfaların resimlerini aşağıda görebilirsiniz.
 
