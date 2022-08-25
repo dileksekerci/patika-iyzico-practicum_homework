@@ -1,9 +1,9 @@
 # JavaScript - Ödev3 - Asian Kitchen's Menu
 Sayfamız, 4 kategoriden oluşuyor. Tüm yiyeceklerin göründüğü, kore yemeklerinin filtrelendiği, japon yemeklerinin filtrelendiği ve çin yemeklerinin filtrelendiği bölümler bulunuyor.
 
-Listeye eklenen veriler Local Storage da tutuluyor ve daha sonra açtığımızda, yapılacak listemize daha önce eklediğimiz ve seçtiğimiz yani tamamladığımız işleri görebiliyoruz. 
+Dizi olarak verilen yemeklerde; id,  title, category, price, img ve desc bölümleri bulunmakta. Filtreleme yaparken category bölümüne göre filtreleyerek ilgili alana ekledik.
 
-İçerik HTML, CSS, Bootstrap 5.2 versiyonu ve JavaScript ile oluşturulmuştur. Bootstrap sayfaya CDN olrak eklendi. Sayfaların resimlerini aşağıda görebilirsiniz.
+İçerik HTML, CSS, Bootstrap 5 versiyonu ve JavaScript ile oluşturulmuştur. Bootstrap sayfaya CDN olrak eklendi. Sayfaların resimlerini aşağıda görebilirsiniz.
 
  ![Screenshot](screenshots/1.PNG)
  ![Screenshot](screenshots/2.PNG)
