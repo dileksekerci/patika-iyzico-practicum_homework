@@ -4,60 +4,83 @@ let todoText = document.querySelector("#text")
 let form = document.querySelector("#new-todo")
 let ullength = document.getElementsByTagName("li");
 
-form.addEventListener("submit", addTodo)
+let taskList = [];
 
-//Choose an element
-function check() {
-    this.classList.toggle("checked");
+if (localStorage.getItem("taskList") !== null) {
+    taskList = JSON.parse(localStorage.getItem("taskList"));
+    showTasks();
 }
 
-function removeButton() {
-    this.parentElement.remove();
-}
+form.addEventListener("submit", newTodo)
 
-//add new list item
-function newListItem() {
-    let todoLi = document.createElement('li')
-    todoList.appendChild(todoLi);
-    todoLi.innerHTML = text.value;
+//show all todo items from local storage
+function showTasks() {
 
-    //chosee
-    todoLi.onclick = check;
+    todoList.innerHTML = "";
 
-    //create delete button
-    let deleteBtn = document.createElement("span");
-    deleteBtn.textContent = "\u00D7";
-    deleteBtn.classList.add("close");
-    deleteBtn.onclick = removeButton;
+    for (let i = 0; i < taskList.length; i++) {
+        let todoLi = document.createElement('li')
+        todoLi.innerHTML = taskList[i].todoName;
+        todoLi.id = taskList[i].todoId;
+        todoLi.onclick = check;
+        if (taskList[i].isCompleted == 1) {
+            todoLi.classList.toggle("checked");
+        }
 
-    todoLi.append(deleteBtn);
-}
-
-
-//Check the added content
-function addTodo(event) {
-    if (todoText.value.length === 0) {
-        $(".toast-empty").toast("show");
-        event.preventDefault();
-    } else {
-        newListItem(todoText.value);
-        todoText.value = '';
-        $(".toast-add").toast("show");
-        event.preventDefault();
-    }
-}
-
-//Delete an element
-function deleteTodo() {
-    for (let i = 0; i < ullength.length; i++) {
         let deleteBtn = document.createElement("span");
         deleteBtn.textContent = "\u00D7";
         deleteBtn.classList.add("close");
-        deleteBtn.onclick = removeButton;
-        ullength[i].append(deleteBtn);
-        ullength[i].onclick = check;
+        deleteBtn.id = todoLi.id;
+        deleteBtn.onclick = deleteTodo;
+
+        todoLi.append(deleteBtn);
+
+        todoList.appendChild(todoLi);
     }
 }
 
 
-//TODO: Local Storage Ekelenecek
+//Delete an element with todoId
+function deleteTodo() {
+    this.parentElement.remove();
+    for (let i = 0; i < taskList.length; i++) {
+        if (taskList[i].todoId == this.parentElement.id) {
+            taskList.splice(i, 1);
+        }
+    }
+    localStorage.setItem("taskList", JSON.stringify(taskList));
+    $(".toast-del").toast("show");
+}
+
+
+//create new todo item and add to tasklist array for local storage
+function newTodo() {
+    if (todoText.value.length == 0) {
+        //alert("boş bırakılamaz");
+        $(".toast-empty").toast("show");
+    } else {
+        taskList.push({ "todoId": taskList.length, "todoName": todoText.value, "isCompleted": 0 });
+    }
+    todoText.value = "";
+    showTasks();
+    //alert("Listeye eklendi");
+    $(".toast-add").toast("show");
+    localStorage.setItem("taskList", JSON.stringify(taskList));
+}
+
+
+//Mark todo item checked or unchecked
+function check() {
+    this.classList.toggle("checked");
+    for (let i = 0; i < taskList.length; i++) {
+        //check clicked todo item's id and change complete flag
+        if (taskList[i].todoId == this.id) {
+            if (taskList[i].isCompleted == 1) {
+                taskList[i].isCompleted = 0;
+            } else {
+                taskList[i].isCompleted = 1;
+            }
+        }
+    }
+    localStorage.setItem("taskList", JSON.stringify(taskList));
+}
