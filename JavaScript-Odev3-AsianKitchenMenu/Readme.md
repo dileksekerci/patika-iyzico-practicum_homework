@@ -3,7 +3,7 @@ Sayfamız, 4 kategoriden oluşuyor. Tüm yiyeceklerin göründüğü, kore yemek
 
 Dizi olarak verilen yemeklerde; id,  title, category, price, img ve desc bölümleri bulunmakta. Filtreleme yaparken category bölümüne göre filtreleyerek ilgili alana ekledik.
 
-İçerik HTML, CSS, Bootstrap 5 versiyonu ve JavaScript ile oluşturulmuştur. Bootstrap sayfaya CDN olrak eklendi. Sayfaların resimlerini aşağıda görebilirsiniz.
+İçerik HTML, CSS, Bootstrap 5 versiyonu ve JavaScript ile oluşturulmuştur. Bootstrap sayfaya CDN olarak eklendi. Sayfaların resimlerini aşağıda görebilirsiniz.
 
  ![Screenshot](screenshots/1.PNG)
  ![Screenshot](screenshots/2.PNG)
