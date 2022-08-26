@@ -1,7 +1,6 @@
-let toastBtn = document.querySelector("#toastButton")
+let addBtn = document.querySelector("#addButton")
 let todoList = document.querySelector("#todo-list")
 let todoText = document.querySelector("#text")
-let form = document.querySelector("#new-todo")
 let ullength = document.getElementsByTagName("li");
 
 let taskList = [];
@@ -10,8 +9,7 @@ if (localStorage.getItem("taskList") !== null) {
     taskList = JSON.parse(localStorage.getItem("taskList"));
     showTasks();
 }
-
-form.addEventListener("submit", newTodo)
+addBtn.onclick = newTodo;
 
 //show all todo items from local storage
 function showTasks() {
@@ -49,23 +47,21 @@ function deleteTodo() {
         }
     }
     localStorage.setItem("taskList", JSON.stringify(taskList));
-    $(".toast-del").toast("show");
+    $('.toast-del').toast('show');
 }
 
 
 //create new todo item and add to tasklist array for local storage
 function newTodo() {
     if (todoText.value.length == 0) {
-        //alert("boş bırakılamaz");
-        $(".toast-empty").toast("show");
+        $('.toast-empty').toast('show');
     } else {
         taskList.push({ "todoId": taskList.length, "todoName": todoText.value, "isCompleted": 0 });
     }
     todoText.value = "";
     showTasks();
-    //alert("Listeye eklendi");
-    $(".toast-add").toast("show");
     localStorage.setItem("taskList", JSON.stringify(taskList));
+    $('.toast-add').toast('show');
 }
 
 
