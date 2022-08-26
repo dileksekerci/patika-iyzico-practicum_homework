@@ -83,3 +83,99 @@ const menu = [
 ];
 
 
+//Button and Menu Selection
+const btnContainer = document.querySelector(".btn-container");
+const section = document.querySelector(".section-center");
+
+
+//The buttons on the top have been created
+const createButtons = () => {
+    let allButtons = `
+    <button id="all" class="btn btn-outline-dark btn-item" type="button">
+      All
+    </button>
+    <button id="korea" class="btn btn-outline-dark btn-item" type="button">
+      Korea
+    </button>
+    <button id="japan" class="btn btn-outline-dark btn-item" type="button">
+      Japan
+    </button>
+    <button id="china" class="btn btn-outline-dark btn-item" type="button">
+      China
+    </button>
+  `
+    btnContainer.innerHTML = allButtons;
+}
+createButtons();
+
+
+//Food view created
+const createFoods = (food) => {
+    let html = `
+    <div class="menu-items col-lg-6 col-sm-12">
+      <img class="photo" src="${food.img}" alt="${food.title}">
+      <div class="menu-info">
+        <div class="menu-title">
+          <h4>${food.title}</h4>
+          <h4 class="price">${food.price}</h4>
+        </div>
+        <div class="menu-text">${food.desc}</div>
+      </div>
+    </div>  
+  `
+    return html;
+}
+
+
+//All foods listed
+const listAllFoods = () => {
+    let allFoods = "";
+    menu.map(item => {
+        allFoods += createFoods(item)
+    })
+    section.innerHTML = allFoods;
+}
+document.addEventListener("DOMContentLoaded", listAllFoods);
+document.querySelector("#all").addEventListener("click", listAllFoods);
+
+
+//Those whose category is korean are listed
+const listKoreaFoods = () => {
+    let koreaFoods = "";
+    menu.map(item => {
+        if (item.category === "Korea") {
+            koreaFoods += createFoods(item)
+        }
+    })
+    section.innerHTML = koreaFoods;
+}
+document.querySelector("#korea").addEventListener("click", listKoreaFoods);
+
+
+
+//Those whose category is Japanese are listed
+const listJapanFoods = () => {
+    let japanFoods = "";
+    menu.map(item => {
+        if (item.category === "Japan") {
+            japanFoods += createFoods(item)
+        }
+    })
+    section.innerHTML = japanFoods;
+}
+document.querySelector("#japan").addEventListener("click", listJapanFoods);
+
+
+
+//Those whose category is china are listed
+const listChinaFoods = () => {
+    let chinaFoods = "";
+    menu.map(item => {
+        if (item.category === "China") {
+            chinaFoods += createFoods(item)
+        }
+    })
+    section.innerHTML = chinaFoods;
+}
+document.querySelector("#china").addEventListener("click", listChinaFoods);
+
